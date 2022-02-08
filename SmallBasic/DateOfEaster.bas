@@ -1,5 +1,6 @@
-' Date of Easter in SmallBasic
-' Jean Meeus, Astronomical Algorithms, 1998, p. 67
+' Date of Easter
+' Based on algorithm by Jean Meeus, Astronomical Algorithms, 1998, p. 67
+'
 TextWindow.WriteLine("Date of Easter")
 
 input:
