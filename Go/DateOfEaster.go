@@ -1,4 +1,4 @@
-// Date of Easter in SmallBasic
+// Date of Easter
 // Based on algorithm by Jean Meeus, Astronomical Algorithms, 1998, p. 67
 
 package main
