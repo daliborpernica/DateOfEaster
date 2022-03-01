@@ -1,0 +1,20 @@
+10 REM Date of Easter
+20 REM Based on algorithm by Jean Meeus, Astronomical Algorithms, 1998, p.67
+30 INPUT "Enter a year:"; X
+40 IF X<1583 THEN PRINT "Year earlier than 1583 is not allowed!": GOTO 30
+50 LET A=X MOD 19
+60 LET B=X\100
+70 LET C=X MOD 100
+80 LET D=B\4
+90 LET E=B MOD 4
+100 LET F=(B+8)\25
+110 LET G=(B-F+1)\3
+120 LET H=(19*A+B-D-G+15) MOD 30
+130 LET I=C\4
+140 LET K=C MOD 4
+150 LET L=(32+2*E+2*I-H-K) MOD 7
+160 LET M=(A+11*H+22*L)\451
+170 LET Z=H+L-7*M+114
+180 LET N=Z\31
+190 LET P=Z MOD 31
+200 IF N=3 THEN PRINT "March ";P+1 :ELSE IF N=4 THEN PRINT "April ";P+1
