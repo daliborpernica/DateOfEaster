@@ -3,21 +3,18 @@
     Based on algorithm by Jean Meeus, Astronomical Algorithms, 1998, p. 67 
 }
 program DateOfEaster;
-label
-    input;
 var
     x, a, b, c, d, e, f, g, h, i, k, l, m, n, p, z : Integer;
 begin
 
-input:
-    Write('Enter a year:');
-    ReadLn(x);
+    repeat
+        Write('Enter a year:');
+        ReadLn(x);
 
-    if (x < 1583) then
-    begin
+        if (x >= 1583) then break;
+
         WriteLn('Year earlier than 1583 is not allowed!');
-        goto input;
-    end;
+    until false;
 
     a := x mod 19;
     b := x div 100;
