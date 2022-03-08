@@ -9,14 +9,13 @@ int main(void)
 {
     int x, a, b, c, d, e, f, g, h, i, k, l, m, n, p, z;
 
-input:
-    printf("Enter a year:");
-    scanf("%d", &x);
-
-    if (x < 1583)
+    for(;;)
     {
+        printf("Enter a year:");
+        scanf("%d", &x);
+
+        if (x >= 1583) break;
         printf("Year earlier than 1583 is not allowed!\n");
-        goto input;
     }
 
     a = x % 19;
