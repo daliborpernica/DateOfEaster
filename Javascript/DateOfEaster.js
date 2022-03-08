@@ -1,3 +1,6 @@
+// Date of Easter
+// Based on algorithm by Jean Meeus, Astronomical Algorithms, 1998, p. 67
+
 const x = new Date().getFullYear();
 
 if (Math.floor(x) != x)
