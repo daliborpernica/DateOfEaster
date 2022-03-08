@@ -9,14 +9,13 @@ class DateOfEaster
     {
         int x, a, b, c, d, e, f, g, h, i, k, l, m, n, p, z;
 
-input:
-        Console.Write("Enter a year:");
-        x = Convert.ToInt32(Console.ReadLine());
-
-        if (x < 1583)
+        for(;;)
         {
-            Console.Write("Year earlier than 1583 is not allowed!");
-            goto input;
+            Console.Write("Enter a year:");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            if (x >= 1583) break;
+            Console.WriteLine("Year earlier than 1583 is not allowed!");
         }
 
         a = x % 19;
