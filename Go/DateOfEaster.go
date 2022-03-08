@@ -8,12 +8,15 @@ import "fmt"
 func main() {
     var x, a, b, c, d, e, f, g, h, i, k, l, m, n, p, z int
 
-input: fmt.Print("Enter a year:")
-    fmt.Scanf("%d", &x)
+    for
+    {
+        fmt.Print("Enter a year:")
+        fmt.Scanf("%d", &x)
 
-    if (x < 1583) {
+        if (x >= 1583) {
+            break;
+        }
         fmt.Println("Year earlier than 1583 is not allowed!")
-        goto input
     }
 
     a = x % 19
