@@ -1,0 +1,4 @@
+all: DateOfEaster
+
+%: %.lua
+	lua $^
