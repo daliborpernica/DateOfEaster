@@ -27,13 +27,13 @@ implicit none
     m = (a + 11 * h + 22 * l) / 451
     z = h + l - 7 * m + 114
     n = z / 31
-    p = mod(z, 31)
+    p = mod(z, 31) + 1
 
     if (n == 3 .or. n == 4) then
         if (n == 3) then
-            print *, "March ", p + 1
+            print *, "March ", p
         else
-            print *, "April ", p + 1
+            print *, "April ", p
         endif
     endif
 

@@ -33,12 +33,12 @@ func main() {
     m = (a + 11 * h + 22 * l) / 451
     z = h + l - 7 * m + 114
     n = z / 31
-    p = z % 31
+    p = z % 31 + 1
     
     switch n {
     case 3:
-        fmt.Println("March ", p + 1)
+        fmt.Println("March ", p)
     case 4:
-        fmt.Println("April ", p + 1)
+        fmt.Println("April ", p)
     }
 }

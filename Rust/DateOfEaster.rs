@@ -31,12 +31,12 @@ fn main()
     let m = (a + 11 * h + 22 * l) / 451;
     let z = h + l - 7 * m + 114;
     let n = z / 31;
-    let p = z % 31;
+    let p = z % 31 + 1;
 
     match n
     {
-        3 => println!("March {}", p + 1),
-        4 => println!("April {}", p + 1),
+        3 => println!("March {}", p),
+        4 => println!("April {}", p),
         _ => println!("Unexpected month number {}", n)
     }
 }

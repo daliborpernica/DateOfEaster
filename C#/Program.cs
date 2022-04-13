@@ -32,15 +32,15 @@ class DateOfEaster
         m = (a + 11 * h + 22 * l) / 451;
         z = h + l - 7 * m + 114;
         n = z / 31;
-        p = z % 31;
+        p = z % 31 + 1;
 
         switch (n)
         {
             case 3:
-                Console.WriteLine("March {0}", p + 1);
+                Console.WriteLine("March {0}", p);
                 break;
             case 4:
-                Console.WriteLine("April {0}", p + 1);
+                Console.WriteLine("April {0}", p);
                 break;
         }
 

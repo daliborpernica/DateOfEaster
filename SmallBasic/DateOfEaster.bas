@@ -31,7 +31,7 @@ l = Math.Remainder(32 + 2 * e + 2 * i - h - k, 7)
 m = Math.Floor((a + 11 * h + 22 * l) / 451)
 z = h + l - 7 * m + 114
 n = Math.Floor(z / 31)
-p = Math.Remainder(z, 31)
+p = Math.Remainder(z, 31) + 1
 
 If n = 3 Or n = 4 Then
     If n = 3 Then
@@ -39,5 +39,5 @@ If n = 3 Or n = 4 Then
     Else
         TextWindow.Write("April ")
     EndIf
-    TextWindow.WriteLine(p + 1)      
+    TextWindow.WriteLine(p)
 EndIf

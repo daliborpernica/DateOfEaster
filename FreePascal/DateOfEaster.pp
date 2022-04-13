@@ -30,10 +30,10 @@ begin
     m := (a + 11 * h + 22 * l) div 451;
     z := h + l - 7 * m + 114;
     n := z div 31;
-    p := z mod 31;
+    p := z mod 31 + 1;
 
     case n of
-        3: WriteLn('March ', p + 1);
-        4: WriteLn('April ', p + 1);
+        3: WriteLn('March ', p);
+        4: WriteLn('April ', p);
     end;
 end.

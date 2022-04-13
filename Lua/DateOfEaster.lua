@@ -31,10 +31,10 @@ local l = (32 + 2 * e + 2 * i - h - k) % 7
 local m = (a + 11 * h + 22 * l) // 451
 local z = h + l - 7 * m + 114
 local n = z // 31
-local p = z % 31
+local p = z % 31 + 1
 
 if (n == 3) then
-    io.write('March ', p + 1, '\n')
+    io.write('March ', p, '\n')
 elseif (n == 4) then
-    io.write('April ', p + 1, '\n')
+    io.write('April ', p, '\n')
 end

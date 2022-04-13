@@ -32,15 +32,15 @@ int main(void)
     m = (a + 11 * h + 22 * l) / 451;
     z = h + l - 7 * m + 114;
     n = z / 31;
-    p = z % 31;
+    p = z % 31 + 1;
 
     switch (n)
     {
         case 3:
-            printf("March %d\n", p + 1);
+            printf("March %d\n", p);
             break;
         case 4:
-            printf("April %d\n", p + 1);
+            printf("April %d\n", p);
             break;
     }
 

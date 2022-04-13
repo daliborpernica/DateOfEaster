@@ -27,14 +27,14 @@ const l = (32 + 2 * e + 2 * i - h - k) % 7;
 const m = Math.floor((a + 11 * h + 22 * l) / 451);
 const z = h + l - 7 * m + 114;
 const n = Math.floor(z / 31);
-const p = z % 31;
+const p = z % 31 + 1;
 
 switch (n)
 {
     case 3:
-        console.log('March %d', p + 1);
+        console.log('March %d', p);
         break;
     case 4:
-        console.log('April %d', p + 1);
+        console.log('April %d', p);
         break;
 }

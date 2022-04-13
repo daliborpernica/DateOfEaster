@@ -23,9 +23,9 @@ l = (32 + 2 * e + 2 * i - h - k) % 7
 m = (a + 11 * h + 22 * l) / 451
 z = h + l - 7 * m + 114
 n = z / 31
-p = z % 31
+p = z % 31 + 1
 
 if n == 3:
-    print("March " + str(p+ 1))
+    print("March " + str(p))
 elif n == 4:
-    print("April " + str(p + 1))
+    print("April " + str(p))

@@ -33,9 +33,8 @@ my $l = (32 + 2 * $e + 2 * $i - $h - $k) % 7;
 my $m = int(($a + 11 * $h + 22 * $l) / 451);
 my $z = $h + $l - 7 * $m + 114;
 my $n = int($z / 31);
-my $p = $z % 31;
+my $p = $z % 31 + 1;
 
-$p++;
 if ($n == 3)
 {
     print "March $p\n";
