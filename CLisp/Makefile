@@ -1,0 +1,4 @@
+all: DateOfEaster
+
+%: %.lisp
+	clisp $^
