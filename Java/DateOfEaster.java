@@ -15,10 +15,7 @@ class DateOfEaster
         while (true)
         {
             x = Integer.parseInt(System.console().readLine("Enter a year:"));
-            if (x >= 1583)
-            {
-                break;
-            }
+            if (x >= 1583) break;
             console.printf("Year earlier than 1583 is not allowed!\n");
         }
 
