@@ -2,3 +2,4 @@ DateOfEaster
 **/*.o
 **/bin/*
 **/obj/*
+**/*.class
